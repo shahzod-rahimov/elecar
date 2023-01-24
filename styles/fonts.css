@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Exo Regular";
+  src: url("../fonts/Exo/static/Exo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Exo Medium";
+  src: url("../fonts/Exo/static/Exo-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Exo SemiBold";
+  src: url("../fonts/Exo/static/Exo-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+}
