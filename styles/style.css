@@ -434,3 +434,113 @@ header {
   top: 270px;
 }
 /* ------------------------------------ feature finished ------------------------------------*/
+
+/* ------------------------------------ luxury-cars started ------------------------------------*/
+
+.luxury-cars__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #f1f2f3;
+  margin-top: 72px;
+}
+
+.luxury-cars__brands {
+  width: 333px;
+  height: 73px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.luxury-cars__brands-brand {
+  margin-top: 48px;
+  width: 52px;
+  height: 52px;
+  background: #111213;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-brand {
+  background: #4177dc;
+}
+
+.luxury-cars__cards {
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.luxury-cars__card {
+  list-style-type: none;
+  width: 248px;
+  height: 312px;
+  background: #111213;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 72px 0 55px 72px;
+}
+
+.luxury-cars__card::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 20px;
+  top: 65px;
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(60px);
+}
+
+.luxury-cars__card-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #f1f2f3;
+  width: 100%;
+}
+
+.luxury-cars__card-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  color: #babec4;
+  width: 100%;
+}
+
+.luxury-cars__card-info {
+  padding-top: 32px;
+  padding-left: 24px;
+}
+
+.luxury-cars__card-image {
+  padding-top: 50px;
+  padding-left: 16px;
+  position: absolute;
+}
+
+.luxury-cars__card-price {
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  padding-left: 24px;
+  padding-top: 170px;
+}
+
+.luxury-cars__card-wrapper {
+  width: 56px;
+  height: 48px;
+  background: #4177dc;
+  border-radius: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
