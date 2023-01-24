@@ -275,7 +275,6 @@ header {
   width: 100%;
   font-weight: 600;
   font-size: 24px;
-  line-height: 140%;
   text-align: center;
   color: #f1f2f3;
 }
@@ -296,6 +295,8 @@ header {
   flex-direction: column;
   align-items: flex-end;
   position: relative;
+  /* width: 258px;
+  height: 328px; */
 }
 
 .popular__card::before {
@@ -313,14 +314,12 @@ header {
 .popular__card__title {
   font-weight: 600;
   font-size: 24px;
-  line-height: 140%;
   color: #f1f2f3;
   width: 100%;
 }
 
 .popular__card__text {
   font-size: 16px;
-  line-height: 140%;
   color: #babec4;
   width: 100%;
   margin-bottom: 12px;
@@ -354,7 +353,6 @@ header {
   width: 100%;
   font-weight: 600;
   font-size: 20px;
-  line-height: 140%;
   color: #ffffff;
 }
 
@@ -372,3 +370,67 @@ header {
 }
 
 /* ------------------------------------ popular finished ------------------------------------*/
+
+/* ------------------------------------ feature started ------------------------------------*/
+
+.feature__title {
+  margin-top: 72px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #f1f2f3;
+}
+
+.feature__bg__image {
+  margin-top: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.feature__car_image {
+  top: 140px;
+  position: absolute;
+}
+
+.feature__info--list {
+  position: absolute;
+  text-align: center;
+  list-style-type: none;
+  width: 127px;
+  height: 92px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+
+.feature__info--list-title {
+  padding: 12px 0 4px 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-main-color);
+}
+
+.feature__info--list-subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  color: var(--text-main-color);
+}
+
+.box1 {
+  left: -75px;
+  top: 61px;
+}
+
+.box2 {
+  left: 150px;
+  top: 130px;
+}
+
+.box3 {
+  left: -75px;
+  top: 270px;
+}
+/* ------------------------------------ feature finished ------------------------------------*/
