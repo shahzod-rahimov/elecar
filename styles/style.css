@@ -8,8 +8,8 @@
 :root {
   --bg-main-color: #0a0a0b;
   --text-main-color: #fff;
-  --btn-bg-color: #306ad9;
-  --btn-bg-color-hover: #4177dc;
+  --btn-bg-color: #4177dc;
+  --btn-bg-color-hover: #306ad9;
   --btn-bg-color-active: #608ce2;
   --icon-color: #babec4;
 }
@@ -103,7 +103,6 @@ header {
 }
 
 .wrapper {
-  /* background-color: rgb(117, 112, 112); */
   text-align: center;
 }
 
@@ -179,4 +178,197 @@ header {
 .intro__start:hover h2 {
   filter: drop-shadow(0px 0px 16px #02db8a);
 }
-/* ------------------------------------ header finished ------------------------------------*/
+/* ------------------------------------ intro finished ------------------------------------*/
+
+/* ------------------------------------ about started ------------------------------------*/
+
+.about {
+  margin-top: 72px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__left-img {
+  position: relative;
+}
+
+.info_img {
+  position: absolute;
+  width: 197px;
+  height: 104px;
+  left: 284px;
+  top: 268px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.info_img h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.info_img p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.about__info {
+  width: 401px;
+  height: 278px;
+}
+
+.about__info h2 {
+  width: 209px;
+  height: 68px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.about__info p {
+  width: 401px;
+  height: 88px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--icon-color);
+  margin-top: 24px;
+}
+
+.about__info-btn {
+  width: 149px;
+  height: 50px;
+  margin-top: 48px;
+  background: var(--btn-bg-color);
+  border-radius: 4px;
+  color: var(--text-main-color);
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.about__info-btn:hover {
+  background: var(--btn-bg-color-hover);
+}
+
+.about__info-btn:active {
+  background: var(--btn-bg-color-active);
+}
+/* ------------------------------------ about finished ------------------------------------*/
+
+/* ------------------------------------ popular started ------------------------------------*/
+
+.popular {
+  margin-top: 150px;
+  padding: 72px 48px;
+}
+
+.popular__title {
+  margin: 0 auto 64px;
+  max-width: 278px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #f1f2f3;
+}
+
+.popular__cards {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular__card {
+  overflow: hidden;
+  background: #111213;
+  border-radius: 20px;
+  padding: 32px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.popular__card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: -80px;
+  top: -48px;
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(60px);
+}
+
+.popular__card__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #f1f2f3;
+  width: 100%;
+}
+
+.popular__card__text {
+  font-size: 16px;
+  line-height: 140%;
+  color: #babec4;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.popular__card__image {
+  margin-bottom: 22px;
+}
+
+.popular__card__info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+.popular__card__info__desc {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  max-width: 95px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.popular__card__info__desc img {
+  margin-right: 4px;
+}
+
+.popular__card__price {
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.popular__shopping__wrapper {
+  width: 56px;
+  height: 48px;
+  background: #4177dc;
+  border-radius: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* ------------------------------------ popular finished ------------------------------------*/
