@@ -48,6 +48,10 @@ header {
   width: 40%;
 }
 
+.menu {
+  display: none;
+}
+
 .nav__list--item {
   list-style-type: none;
 }
@@ -140,14 +144,23 @@ header {
 .intro__info {
   width: 406px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 40px auto;
   height: 104px;
 }
 
+.text {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text-main-color);
+  padding: 16px 0 4px 0;
+}
+
 .info__text {
   color: var(--icon-color);
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .intro__start {
@@ -190,6 +203,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .about__left-img {
@@ -218,11 +232,6 @@ header {
   font-size: 13px;
   font-weight: 400;
   margin-top: 8px;
-}
-
-.about__info {
-  width: 401px;
-  height: 278px;
 }
 
 .about__info h2 {
@@ -284,6 +293,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .popular__card {
@@ -453,10 +463,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 48px;
 }
 
 .luxury-cars__brands-brand {
-  margin-top: 48px;
   width: 52px;
   height: 52px;
   background: #111213;
@@ -471,12 +481,13 @@ header {
 }
 
 .luxury-cars__cards {
-  margin-top: 64px;
+  margin: 64px 0 72px 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .luxury-cars__card {
+  margin: 72px 0 55px 72px;
   list-style-type: none;
   width: 248px;
   height: 312px;
@@ -484,7 +495,6 @@ header {
   border-radius: 20px;
   position: relative;
   overflow: hidden;
-  margin: 72px 0 55px 72px;
 }
 
 .luxury-cars__card::before {
@@ -513,12 +523,13 @@ header {
 }
 
 .luxury-cars__card-info {
+  position: absolute;
   padding-top: 32px;
   padding-left: 24px;
 }
 
 .luxury-cars__card-image {
-  padding-top: 50px;
+  padding-top: 115px;
   padding-left: 16px;
   position: absolute;
 }
@@ -529,7 +540,7 @@ header {
   font-size: 20px;
   color: #ffffff;
   padding-left: 24px;
-  padding-top: 170px;
+  padding-top: 250px;
 }
 
 .luxury-cars__card-wrapper {
@@ -543,4 +554,430 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* ------------------------------------ luxury-cars finished ------------------------------------*/
+
+/* ------------------------------------ offer started ------------------------------------*/
+
+.offer {
+  background-image: url("../images/bg-image-small.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  position: relative;
+  margin-bottom: 100px;
+  padding: 72px 0 56px 0;
+}
+
+.offer-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.offer__left {
+  padding-left: 80px;
+}
+
+.offer__left h4 {
+  margin-top: 72px;
+  width: 312px;
+  height: 68px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #f1f2f3;
+}
+
+.offer__left p {
+  margin-top: 31px;
+  width: 375px;
+  height: 66px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #babec4;
+}
+
+.offer__left button {
+  margin-top: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background: #4177dc;
+  border-radius: 4px;
+  padding: 14px 32px;
+  border: none;
+}
+
+.offer__right {
+  margin-left: 80px;
+}
+
+/* ------------------------------------ offer finished ------------------------------------*/
+
+/* ------------------------------------ brands srarted ------------------------------------*/
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 810px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------ brands finished ------------------------------------*/
+
+/* ------------------------------------ footer srarted ------------------------------------*/
+
+.footer__container {
+  /* background: #fff; */
+  margin-top: 136px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__logo img {
+  width: 110px;
+  height: 34px;
+}
+
+.footer__logo p {
+  /* margin-top: 24px; */
+  font-weight: 400;
+  font-size: 13px;
+  color: #babec4;
+  width: 198px;
+  height: 54px;
+}
+
+.footer__company h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #f1f2f3;
+  margin-bottom: 14px;
+}
+
+.footer__info h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #f1f2f3;
+  margin-bottom: 14px;
+}
+
+.footer__company p {
+  padding: 10px 0;
+}
+
+.footer__info p {
+  padding: 10px 0;
+}
+
+.footer__ahref {
+  font-weight: 400;
+  font-size: 16px;
+  color: #babec4;
+  text-decoration: none;
+}
+
+.footer__follow h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #f1f2f3;
+  margin-bottom: 24px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer__copyright {
+  margin: 98px 0 32px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  color: #888b91;
+}
+/* ------------------------------------ footer srarted ------------------------------------*/
+
+/* ----------------------------- Responsive ---------------------------------- */
+
+@media only screen and (max-width: 360px) {
+
+  .container {
+    max-width: 312px;
+    padding: 0 10px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .nav__logo {
+    height: 22px;
+  }
+
+  .intro__info--item img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+
+  .intro__title {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .intro__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .intro__car {
+    width: 280px;
+  }
+
+  .text {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 12px;
+  }
+
+  .info__text {
+    font-weight: 400;
+    font-size: 10px;
+    color: #888b91;
+  }
+
+  .intro__info {
+    width: 296px;
+    justify-content: space-between;
+  }
+
+  .intro::before {
+    width: 400px;
+    height: 400px;
+    left: -190px;
+    top: -240px;
+  }
+
+  .intro::after {
+    width: 300px;
+    height: 300px;
+    left: 272px;
+    top: 175px;
+  }
+
+  .intro__start {
+    margin: 57px auto;
+  }
+
+  .about__img {
+    width: 312px;
+  }
+
+  .info_img {
+    width: 181px;
+    height: 95px;
+    left: 132px;
+    top: 159px;
+  }
+
+  .info_img h3 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .info_img p {
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .about__info h2 {
+    margin-top: 95px;
+    width: 174px;
+    height: 56px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .about__info p {
+    width: 312px;
+    height: 105px;
+    font-size: 15px;
+  }
+
+  .about__info-btn {
+    width: 144px;
+    height: 53px;
+    font-size: 15px;
+  }
+
+  .popular {
+    margin-top: 65px;
+  }
+
+  .popular__title {
+    margin: 0 auto 64px;
+    max-width: 232px;
+    font-size: 20px;
+  }
+
+  .popular__card {
+    margin-bottom: 20px;
+  }
+
+  .feature__title {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .feature__bg__image {
+    width: 350px;
+  }
+
+  .feature__car_image {
+    width: 150px;
+  }
+
+  .feature__info--list {
+    width: 111px;
+    height: 84px;
+  }
+
+  .feature__info--list-title {
+    font-size: 16px;
+  }
+
+  .feature__info--list-subtitle {
+    font-size: 12px;
+  }
+
+  .luxury-cars__title {
+    font-size: 20px;
+  }
+
+  .luxury-cars__brands {
+    width: 255px;
+    justify-content: space-between;
+  }
+
+  .luxury-cars__brands-brand {
+    width: 48px;
+    height: 48px;
+  }
+
+  .luxury-cars__brands-brand img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .luxury-cars__cards {
+    margin: 56px 0 48px 0;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .luxury-cars__card {
+    width: 228px;
+    height: 279px;
+    margin: 0;
+  }
+
+  .offer {
+    overflow: hidden;
+    background-position: bottom;
+    height: 550px;
+  }
+
+  .offer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .offer__left {
+    padding-left: 0;
+    margin-top: -90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .offer__left h4 {
+    width: 290px;
+    height: 56px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .offer__left p {
+    width: 312px;
+    height: 63px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .offer__left button {
+    margin-top: 48px;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 14px 32px;
+    border: none;
+  }
+
+  .offer__right {
+    margin-top: 64px;
+    margin-left: 80px;
+    position: absolute;
+    bottom: 0;
+    left: -37px;
+  }
+
+  .offer__car {
+    width: 400px;
+  }
+
+  .brands {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 360px;
+    height: 157px;
+    gap: 20px;
+  }
+
+  .brands__container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .brand {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .footer__container {
+  flex-direction: column;
+  gap: 40px
+}
+
 }
