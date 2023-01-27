@@ -392,7 +392,7 @@ header {
 }
 
 .feature__bg__image {
-  margin-top: -70px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,7 +714,6 @@ header {
 /* ----------------------------- Responsive ---------------------------------- */
 
 @media only screen and (max-width: 360px) {
-
   .container {
     max-width: 312px;
     padding: 0 10px;
@@ -848,12 +847,16 @@ header {
     font-size: 20px;
   }
 
-  .feature__bg__image {
-    width: 350px;
+  .map {
+    width: 650px;
+  }
+
+  .feature__car {
+    width: 150px;
   }
 
   .feature__car_image {
-    width: 150px;
+    top: 120px;
   }
 
   .feature__info--list {
@@ -869,6 +872,18 @@ header {
     font-size: 12px;
   }
 
+  .box1 {
+    left: -65px;
+  }
+
+  .box2 {
+    left: 105px;
+  }
+
+  .box3 {
+    left: -65px;
+    top: 230px;
+  }
   .luxury-cars__title {
     font-size: 20px;
   }
@@ -974,10 +989,8 @@ header {
     height: 40px;
   }
 
-
   .footer__container {
-  flex-direction: column;
-  gap: 40px
-}
-
+    flex-direction: column;
+    gap: 40px;
+  }
 }
