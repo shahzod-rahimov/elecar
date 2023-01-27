@@ -14,6 +14,9 @@
   --icon-color: #babec4;
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: "Exo Regular";
   color: var(--text-main-color);
